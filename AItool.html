@@ -1,0 +1,391 @@
+<body>
+    <div id="home">
+        <div>
+            <a href="https://digmee.jp/" class="pca"><img class="logoa" src="https://s3.ap-northeast-1.amazonaws.com/rea.media.assets/digmedia/Digmedia_logo_(1).png"></a>
+        </div>
+        <div class="top">
+            <img class="top-img" src="https://s3-ap-northeast-1.amazonaws.com/digmedia/media/2024/09/lp_AIgakuchikacreatere.webp" alt="AIガクチカ生成ツール">
+            <div class="top-text pc">
+                <h3>1分でテーマや役職別にガクチカが完成する！</h3>
+        <p>「AIガクチカ生成ツール」を使って、過去経験と学びをアピール！</p>
+        <p>テーマや課題、結果などを選択するだけで、あなたの過去経験を深く掘り下げ、内定に近づくガクチカが作成できます。</p>
+        <p>忙しい就活生もスキマ時間でガクチカを作成しよう！</p>
+      </div>
+      <div class="top-text sp">
+        <p>「AIガクチカ生成ツール」を使って、過去経験と学びをアピール！テーマや課題、結果などを選択するだけで、あなたの過去経験を深く掘り下げ、内定に近づくガクチカが作成できます。忙しい就活生もスキマ時間でガクチカを作成しよう！</p>
+            </div>
+        </div>
+<div class="container">
+    <div class="question_area" id="AI1-container">
+        <fieldset>
+            <legend>活動の種類</legend>
+            <div class="radio-container">
+                <input type="radio" id="AI1-アルバイト" name="AI1" value="アルバイト">
+                <label for="AI1-アルバイト">アルバイト</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI1-部活動" name="AI1" value="部活動">
+                <label for="AI1-部活動">部活動</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI1-サークル" name="AI1" value="サークル">
+                <label for="AI1-サークル">サークル</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI1-インターンシップ" name="AI1" value="インターンシップ">
+                <label for="AI1-インターンシップ">インターンシップ</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI1-ゼミ活動" name="AI1" value="ゼミ活動">
+                <label for="AI1-ゼミ活動">ゼミ活動</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI1-卒論・研究" name="AI1" value="卒論・研究">
+                <label for="AI1-卒論・研究">卒論・研究</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI1-留学" name="AI1" value="留学">
+                <label for="AI1-留学">留学</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI1-ボランティア" name="AI1" value="ボランティア">
+                <label for="AI1-ボランティア">ボランティア</label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="question_area" id="AI2-container" style="display: none;">
+        <fieldset>
+            <legend>活動期間</legend>
+            <div class="radio-container">
+                <input type="radio" id="AI2-6ヶ月未満" name="AI2" value="6ヶ月未満">
+                <label for="AI2-6ヶ月未満">6ヶ月未満</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI2-6ヶ月〜1年" name="AI2" value="6ヶ月〜1年">
+                <label for="AI2-6ヶ月〜1年">6ヶ月〜1年</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI2-1-2年" name="AI2" value="1-2年">
+                <label for="AI2-1-2年">1-2年</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI2-2-3年" name="AI2" value="2-3年">
+                <label for="AI2-2-3年">2-3年</label>
+            </div>
+            <div class="radio-container">
+                <input type="radio" id="AI2-3年以上" name="AI2" value="3年以上">
+                <label for="AI2-3年以上">3年以上</label>
+            </div>
+        </fieldset>
+    </div>
+    <div class="question_area" id="AI3-container" style="display: none;">
+        <fieldset>
+            <legend>役割と貢献内容</legend>
+            <!-- AI3の選択肢をここに追加 -->
+        </fieldset>
+    </div>
+    <div class="question_area" id="AI4-container" style="display: none;">
+        <fieldset>
+            <legend>その活動中に起きた課題</legend>
+            <!-- AI4の選択肢をここに追加 -->
+        </fieldset>
+    </div>
+    <div class="question_area" id="AI5-container" style="display: none;">
+        <fieldset>
+            <legend>どんな行動をしたのか</legend>
+            <!-- AI5の選択肢をここに追加 -->
+        </fieldset>
+    </div>
+    <div class="question_area" id="AI6-container" style="display: none;">
+        <fieldset>
+            <legend>成果はどうなったのか</legend>
+            <!-- AI6の選択肢をここに追加 -->
+        </fieldset>
+    </div>
+    <div class="question_area" id="AI7-container" style="display: none;">
+        <fieldset>
+            <legend>どんなことを学んだのか</legend>
+            <!-- AI7の選択肢をここに追加 -->
+        </fieldset>
+    </div>
+    <button onclick="generatePR()" id="AIBtn" style="display: none;">ガクチカを作成する  >></button>
+</div>
+
+    <div class="resultbox" id="resultbox">
+        <div class="kekka1">- 作成結果 -</div>
+        <div id="result"></div>
+        <div class="afresult">深い森の中に、ミストレイクという大きな湖が広がり、そのそばに小さな村がありました。村のはずれに住むルナという魔法使いは、毎日エレメンタルマジックを使って、森の生き物たちや草花を守っていました。村人たちは彼女を「フォレストガーディアン」と呼んでいました。</div>
+<button id="tobtn" class="tobtn">無料登録をして全文読む</button>
+    </div>
+
+<!-- AI Setting -->
+<script type="importmap">
+    {
+        "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+    }
+</script>
+
+<script>
+function loadGA4() {
+    return new Promise((resolve) => {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-H76FH9XF0V';
+        document.body.appendChild(script);
+        script.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-H76FH9XF0V', { 'debug_mode': true });
+            resolve();
+        };
+        script.onerror = function() {
+            console.warn('Google Analyticsのロードに失敗しました。');
+            resolve();
+        };
+    });
+}
+
+function trackButtonClick() {
+    const pageInfo = window.location.pathname;
+    const deviceType = window.innerWidth >= 769 ? '_pc' : '_sp';
+
+    console.log('GA4 Event: tobtn_click', {
+        'LPID': pageInfo + deviceType
+    });
+
+    gtag('event', 'tobtn_click', {
+        'LPID': pageInfo + deviceType
+    });
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadGA4(); 
+
+    document.getElementById('tobtn').addEventListener('click', function() {
+        trackButtonClick();  
+    });
+});
+
+const activityOptions = {
+    'アルバイト': {
+        'AI3': ['一般スタッフ', 'シフトリーダー', 'トレーナー（新人指導）', '店長補佐'],
+        'AI4': ['人手不足でシフトが回らなかった', '忙しい時間帯に効率的な対応ができなかった', '新人スタッフの育成に時間がかかった', '顧客クレームへの対応が難しかった'],
+        'AI5': ['新しいスタッフの育成マニュアルを作成した', 'シフトの組み方を見直し、効率的に運営できる体制を整えた', 'お客様対応のトレーニングを実施した', '業務フローの改善提案を行った'],
+        'AI6': ['顧客満足度が向上した', '新人スタッフの習熟スピードが速まった', '売上が〇〇％向上した', 'シフトの人員管理が改善された'],
+        'AI7': ['コミュニケーション力の向上', '問題解決力の強化', 'スタッフ指導力を習得した', 'チーム運営の大切さを学んだ']
+    },
+    '部活動': {
+        'AI3': ['プレーヤー', '主将', '副キャプテン', 'マネージャー'],
+        'AI4': ['チームワークが不足していた', '練習の質が低下していた', '連携ミスが多く試合で結果が出せなかった', '部員のモチベーションが低下していた'],
+        'AI5': ['チーム全員で練習メニューを見直した', '定期的にミーティングを実施し、意識を統一した', 'トレーニングプランを強化し、体力向上に努めた', '他のチームと練習試合を積極的に行った'],
+        'AI6': ['大会で入賞した', 'チームの連携が向上し、試合での勝率が上がった', '部員の士気が向上した', '新入部員が増加した'],
+        'AI7': ['リーダーシップを学んだ', 'チームワークの重要性を再認識した', 'モチベーション維持の難しさとその解決方法を学んだ', '継続的な努力の重要性を体感した']
+    },
+    'サークル': {
+        'AI3': ['一般メンバー', '代表', '副代表', '広報担当', 'イベントリーダー'],
+        'AI4': ['イベントの集客がうまくいかなかった', 'メンバーの参加率が低下した', 'スポンサー探しが難航した', '活動内容がマンネリ化していた'],
+        'AI5': ['イベントの宣伝方法を工夫し、SNSなどを活用した', '定期的にメンバーの意見を聞き、活動内容をリフレッシュした', 'スポンサー企業に対して新しい提案を持ちかけた', 'メンバー同士のコミュニケーションを促進するための活動を実施した'],
+        'AI6': ['イベントの参加者数が増加した', 'スポンサー契約が成立した', 'メンバーのモチベーションが向上し、参加率が上がった', 'サークルの活動がメディアで取り上げられた'],
+        'AI7': ['イベント企画力が向上した', '広報・宣伝の重要性を学んだ', '組織運営の難しさとやりがいを感じた', 'コミュニケーション力の重要性を実感した']
+    },
+    'インターンシップ': {
+        'AI3': ['一般インターン', 'プロジェクト担当', 'チームリーダー', '課題解決チームのメンバー'],
+        'AI4': ['課題に対する解決策がなかなか見つからなかった', 'メンバー同士の意見が食い違った', 'スケジュールが厳しく、タスクが進まなかった', '企業の期待に応える成果が出せなかった'],
+        'AI5': ['他のメンバーと協力し、新しいアイデアを出し合った', 'タスク管理方法を見直し、スケジュールを再構成した', '資料やリソースを積極的に活用し、解決策を提案した', 'フィードバックを受けながら改善を繰り返した'],
+        'AI6': ['課題を解決し、企業から評価された', 'チームのプロジェクトが成功し、次のステップへ進むことができた', '新しいアイデアが採用された', '企業からインターン終了後も継続的な仕事の依頼を受けた'],
+        'AI7': ['課題解決能力の向上', 'チームワークの大切さを学んだ', 'スケジュール管理の重要性を理解した', 'ビジネスの実践的なスキルを身につけた']
+    },
+    'ゼミ活動': {
+        'AI3': ['一般メンバー', '研究発表者', 'グループリーダー', '発表準備担当'],
+        'AI4': ['研究内容の理解が深まらなかった', 'チームメンバーの役割分担がうまくいかなかった', '研究資料の不足', '発表準備が遅れていた'],
+        'AI5': ['チーム全員で研究内容を再確認し、理解を深めるためのディスカッションを行った', '役割分担を見直し、効率的に進めた', '資料を追加で調査し、補足した', '締め切り前にスケジュールを組み直し、発表の準備を進めた'],
+        'AI6': ['研究発表が成功し、教授から高評価を得た', 'グループメンバー全員が役割をこなして研究を完成させた', '学会やコンテストでの発表が決まった', '資料の質が向上し、研究内容が深まった'],
+        'AI7': ['研究の進め方を学んだ', 'チームでの協力が成果に繋がることを体感した', 'プレゼンテーション能力を向上させた', '自分自身の専門知識を深めた']
+    },
+    '卒論・研究': {
+        'AI3': ['主研究者', '共同研究者', '研究サポート担当'],
+        'AI4': ['研究データの収集が難航した', '分析に時間がかかった', '実験の繰り返しが必要だった', '指導教官との意見のすり合わせが難しかった'],
+        'AI5': ['資料やデータを追加で収集し、再分析を行った', '実験計画を見直し、効率的に進めた', '教官や他の研究者との議論を深め、方向性を調整した'],
+        'AI6': ['研究成果が学会で発表された', 'データ分析が完了し、論文が完成した', '実験が成功し、新しい知見が得られた'],
+        'AI7': ['データ分析や実験計画の立て方を学んだ', '根気強さの重要性を学んだ', '論理的思考能力を強化した', '自己管理の大切さを学んだ']
+    },
+    '留学': {
+        'AI3': ['留学生', 'プロジェクトメンバー', 'チームリーダー'],
+        'AI4': ['言語の壁があり、コミュニケーションが難しかった', '異文化の違いに適応するのが難しかった', '学業と生活のバランスを取るのが大変だった', 'チーム内での意見交換がうまくいかなかった'],
+        'AI5': ['言語スキルを向上させるために努力した', '異文化理解のために積極的に現地の人と交流した', '学業の計画を見直し、スケジュールを管理した', 'チーム内での意見交換のためにミーティングを頻繁に行った'],
+        'AI6': ['留学先のプロジェクトで成果を出した', '言語能力が向上した', '異文化理解が深まった', '学業と生活のバランスを取り、優秀な成績を収めた'],
+        'AI7': ['異文化の中での適応力を学んだ', '自分の限界を超える力を学んだ', 'コミュニケーションスキルを向上させた', '自律的な時間管理能力を習得した']
+    },
+    'ボランティア': {
+        'AI3': ['一般参加者', 'チームリーダー', 'イベント企画者'],
+        'AI4': ['参加者の人数が少なく、活動がうまく進まなかった', '物資やリソースが不足していた', 'コミュニティとの連携がうまくいかなかった', '短期間での成果を求められた'],
+        'AI5': ['参加者を増やすために宣伝を行った', 'リソースを有効に使うために計画を立て直した', 'コミュニティとの連携を強化するために定期的なミーティングを実施した'],
+        'AI6': ['参加者が増加し、活動が成功した', 'コミュニティとの信頼関係が構築された', '限られたリソースで効率的な活動ができた', '活動の成果が報道で取り上げられた'],
+        'AI7': ['社会貢献の意義を学んだ', '限られたリソースで成果を出す力を身につけた', 'チームリーダーとしての経験を積んだ', 'コミュニティとの連携の重要性を理解した']
+    }
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    const radioContainers = document.querySelectorAll('.radio-container');
+    radioContainers.forEach(container => {
+        const radio = container.querySelector('input[type="radio"]');
+        radio.addEventListener('change', function() {
+            document.querySelectorAll(`.radio-container input[name="${this.name}"]`)
+                .forEach(input => input.closest('.radio-container').classList.remove('selected'));
+            
+            this.closest('.radio-container').classList.add('selected');
+            
+            if (this.name === 'AI1') {
+                updateAllOptions();
+            }
+            
+            showNextField(this.name + '-container', getNextContainerId(this.name));
+        });
+    });
+});
+
+function updateAllOptions() {
+    const selectedActivity = document.querySelector('input[name="AI1"]:checked').value;
+    updateOptions('AI3', selectedActivity);
+    updateOptions('AI4', selectedActivity);
+    updateOptions('AI5', selectedActivity);
+    updateOptions('AI6', selectedActivity);
+    updateOptions('AI7', selectedActivity);
+}
+
+function updateOptions(questionId, activity) {
+    const container = document.getElementById(`${questionId}-container`);
+    const fieldset = container.querySelector('fieldset');
+    fieldset.innerHTML = `<legend>${getQuestionLegend(questionId)}</legend>`;
+    
+    activityOptions[activity][questionId].forEach((option, index) => {
+        const id = `${questionId}-${index}`;
+        fieldset.innerHTML += `
+            <div class="radio-container">
+                <input type="radio" id="${id}" name="${questionId}" value="${option}">
+                <label for="${id}">${option}</label>
+            </div>
+        `;
+    });
+    
+    const newRadios = container.querySelectorAll('input[type="radio"]');
+    newRadios.forEach(radio => {
+        radio.addEventListener('change', function() {
+            document.querySelectorAll(`.radio-container input[name="${this.name}"]`)
+                .forEach(input => input.closest('.radio-container').classList.remove('selected'));
+            this.closest('.radio-container').classList.add('selected');
+            showNextField(questionId + '-container', getNextContainerId(questionId));
+        });
+    });
+}
+
+function getQuestionLegend(questionId) {
+    const legends = {
+        'AI3': '役割と貢献内容',
+        'AI4': 'その活動中に起きた課題',
+        'AI5': 'どんな行動をしたのか',
+        'AI6': '成果はどうなったのか',
+        'AI7': 'どんなことを学んだのか'
+    };
+    return legends[questionId];
+}
+
+function getNextContainerId(currentId) {
+    const ids = ['AI1', 'AI2', 'AI3', 'AI4', 'AI5', 'AI6', 'AI7'];
+    const currentIndex = ids.indexOf(currentId);
+    return currentIndex < ids.length - 1 ? `${ids[currentIndex + 1]}-container` : 'AIBtn';
+}
+
+function showNextField(currentId, nextId) {
+    const nextElement = document.getElementById(nextId);
+    if (nextElement) {
+        nextElement.style.display = "block";
+        nextElement.scrollIntoView({ behavior: "smooth" }); 
+    }
+    
+    if (nextId === 'AIBtn') {
+        document.getElementById('AIBtn').style.display = "block";
+        document.getElementById('AIBtn').scrollIntoView({ behavior: "smooth" }); 
+    }
+}
+</script>
+
+
+<script type="module">
+    import { GoogleGenerativeAI } from "@google/generative-ai";
+
+    const apiKey = 'AIzaSyCSe84z5ial7lmEU_dQNJ4Oswd4gkqrxhs';
+    const genAI = new GoogleGenerativeAI(apiKey);
+
+    async function generatePR() {
+        const button = document.querySelector('button');
+        const resultDiv = document.getElementById('result');
+        const resultDiv1 = document.getElementById('resultbox');
+
+        button.textContent = '現在作成中です...';
+        button.disabled = true;
+        resultDiv.style.display = 'none';
+        resultDiv1.style.display = 'none';
+
+
+        const AI1 = document.querySelector('input[name="AI1"]:checked').value;
+        const AI2 = document.querySelector('input[name="AI2"]:checked').value;
+        const AI3 = document.querySelector('input[name="AI3"]:checked').value;
+        const AI4 = document.querySelector('input[name="AI4"]:checked').value;
+        const AI5 = document.querySelector('input[name="AI5"]:checked').value;
+        const AI6 = document.querySelector('input[name="AI6"]:checked').value;
+        const AI7 = document.querySelector('input[name="AI7"]:checked').value;
+
+        const prTemplate = `
+        以下の情報を基に、学生時代に力を入れたこと（ガクチカ）を400字以内で作成してください。
+
+        活動の種類: ${AI1}
+        活動期間: ${AI2}
+        役割: ${AI3}
+        活動中に起きた課題: ${AI4}
+        課題に対して行った行動: ${AI5}
+        成果: ${AI6}
+        学んだこと: ${AI7}
+
+        この情報をもとに、就活で使えるガクチカを作成してください。。また、最初の文章は「私は学生時代に力を入れたことは${AI1}です」という形式にしてください。`;
+
+        try {
+            const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+
+            const result = await model.generateContent(prTemplate);
+
+            if (result && result.response) {
+　　　　　const generatedText = await result.response.text();
+                resultDiv.textContent = result.response.text();
+　　　　　localStorage.setItem('generatedPR', generatedText);
+            } else {
+                console.error('Error generating text:', result);
+                resultDiv.textContent = 'ガクチカの作成する中にエラーが発生しました。';
+            }
+        } catch (error) {
+            console.error('Fetch error:', error);
+            resultDiv.textContent = 'ガクチカの作成する中にエラーが発生しました。';
+        } finally {
+            resultDiv.style.display = 'block';
+            resultDiv1.style.display = 'block';
+            button.textContent = 'ガクチカを作成する';
+            button.disabled = false;
+           window.location.href = "#resultbox";
+        }
+    }
+    window.generatePR = generatePR;
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.location.hash === "#event-form") {
+    document.getElementById("event-form").style.display = "block";
+  }
+document.getElementById("tobtn").addEventListener("click", function() {
+    document.getElementById("event-form").style.display = "block";
+window.location.href = "#event-form";
+  });
+});
+</script>
+</body>
